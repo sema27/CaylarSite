@@ -1,0 +1,7 @@
+![Ekran görüntüsü 2025-03-28 185804](https://github.com/user-attachments/assets/e99e41df-83d3-45df-9a45-0282063b23fe)
+![Ekran görüntüsü 2025-03-28 185822](https://github.com/user-attachments/assets/58ab200e-7cfb-4a9e-9423-07872395188f)
+![Ekran görüntüsü 2025-03-28 185837](https://github.com/user-attachments/assets/b86564ba-d326-40df-a62f-769dc449544d)
+![Ekran görüntüsü 2025-03-28 185855](https://github.com/user-attachments/assets/5d6139b0-d421-402f-8b0f-6623e9dea5d7)
+![Ekran görüntüsü 2025-03-28 185912](https://github.com/user-attachments/assets/906fd8f3-746f-4f7d-b380-27db5250b2ab)
+![Ekran görüntüsü 2025-03-28 185930](https://github.com/user-attachments/assets/b8da87f6-9728-42db-9f2c-8618f5a4c944)
+![Ekran görüntüsü 2025-03-28 190015](https://github.com/user-attachments/assets/a428f374-9a01-4552-bab4-f3214ac9c702)
