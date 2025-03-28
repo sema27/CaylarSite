@@ -1,0 +1,1011 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+/* === GENEL AYARLAR === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("images/banner.png") no-repeat center top;
+    background-size: contain;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Logo solda, menü sağda */
+    padding: 20px 80px;
+    background: transparent;
+    max-width: 1400px;
+    margin: auto;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    margin-left: auto;
+    /* Menü öğelerini sağ tarafa alır */
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 10px 15px;
+}
+
+.menu a:hover {
+    text-decoration: none;
+}
+
+
+.logo img {
+    height: 50px;
+    padding-left: 10px;
+}
+
+/* === HEADER SECTION === */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1300px;
+    height: 68vh;
+    margin: auto;
+}
+
+.content-text {
+    width: 50vw;
+    max-width: 562px;
+    height: auto;
+    margin: 10vh auto;
+    color: white;
+}
+
+.content-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 67.5px;
+    letter-spacing: 0px;
+}
+
+
+.content-images {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-images img {
+    width: 100%;
+    max-width: 770px;
+    height: auto;
+    margin: 50px auto;
+}
+
+
+/* === HAMBURGER MENÜ (MOBİL İÇİN) === */
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    background: #fff;
+    margin: 5px 0;
+}
+
+/* === 2. BÖLÜM: UYGULAMA ERİŞİMİ === */
+.app-access {
+    background-color: #ffffff;
+    /* Beyaz arka plan */
+    color: #000;
+    /* Siyah yazılar */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 80px 10%;
+}
+
+/* Uygulama Telefon Görselleri */
+.app-images img {
+    width: 520px;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Yazılar */
+.app-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.app-text h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.app-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* App Store & Google Play Butonları */
+.store-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.store-buttons img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.store-buttons img:hover {
+    transform: scale(1.05);
+}
+
+/* ÖZELLİKLER BÖLÜMÜ STİLLERİ */
+.features {
+    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 20px;
+}
+
+.features h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.features p {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 15px;
+}
+
+.feature img {
+    width: 65px;
+    height: auto;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 350px;
+}
+
+.feature-text p {
+    font-size: 26px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.feature-text span {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+
+/* === 4. BÖLÜM: BLOG BÖLÜMÜ === */
+.blog {
+    background-color: #ffffff;
+    color: #000;
+    padding: 80px 10%;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Blog Başlık İkon */
+.blog-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.blog-title img {
+    width: 28px;
+    height: auto;
+}
+
+.blog-title h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* Blog Başlık */
+.blog-content h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 43.8px;
+    margin: 10px 0;
+}
+
+/* Blog Açıklama */
+.blog-content p {
+    width: 622px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: left;
+}
+
+/* Video Kısmı */
+.blog-video h4 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.blog-video h4 span {
+    color: #d3d3d3;
+    font-weight: 300;
+    margin-left: 10px;
+    text-align: right;
+}
+
+.blog-video iframe {
+    width: 560px;
+    height: 315px;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background: black;
+    color: white;
+    padding: 40px 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    height: 45px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 100px;
+    justify-content: flex-end;
+}
+
+.footer-column {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-column p {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    padding: 15px;
+    background: black;
+    color: #aaa;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.footer-bottom::after {
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: #585858;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.footer-links,
+.footer-copyright {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+.footer-bottom a:hover {
+    color: white;
+}
+
+.footer-brand {
+    position: absolute;
+    right: 140px;
+    bottom: 10px;
+}
+
+.footer-brand img {
+    height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Header bölümünün arka planı tam ekrana yayılsın */
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        padding: 0;
+        background: url("images/banner.png") no-repeat center center;
+        background-size: cover;
+        width: 100vw;
+        position: relative;
+    }
+
+    /* Görselleri tam ortala ve büyüt */
+    .content-images img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-top: 120px;
+    }
+
+    /* Yazıyı yukarı al ve hizala */
+    .content-text {
+        text-align: left;
+        width: 85%;
+        color: white;
+        position: absolute;
+        bottom: 10%;
+    }
+
+    .content-text h1 {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 43.8px;
+    }
+
+    /* Hamburger menü: 3 çizgi görünsün */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        z-index: 1100;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 140px;
+        z-index: 1100;
+    }
+
+    /* Menü başlangıçta sağ dışarıda gizli */
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        /* Menü genişliği kadar off-screen */
+        width: 300px;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.3s ease-in-out;
+        z-index: 1050;
+    }
+
+    /* active sınıfı eklenince menü sağa kayarak gelir */
+    .menu.active {
+        right: 0;
+    }
+
+    /* Menü içindeki linklerin düzeni */
+    .menu a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        margin: 15px 0;
+    }
+
+    .content-text h1 {
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    /* UYGULAMA ERİŞİMİ BÖLÜMÜ */
+
+    .app-images img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .app-text h2 {
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    .app-text p {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .store-buttons img {
+        width: 180px;
+    }
+
+    /* ÖZELLİKLER BÖLÜMÜ */
+    .features {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        padding: 15px;
+    }
+
+    .features h2 {
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    .features p {
+        font-size: 22px;
+        font-weight: 300;
+    }
+
+    .features-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Telefonlarda tek sütun */
+        gap: 40px;
+        /* Aralarındaki boşluğu azalttık */
+        padding: 0px;
+    }
+
+    .feature {
+        flex-direction: column;
+        /* Görseller üstte, metin altta */
+        text-align: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .feature img {
+        width: 60px;
+    }
+
+    .feature-text {
+        align-items: center;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .feature-text p {
+        font-size: 24px;
+    }
+
+    .feature-text span {
+        font-size: 20px;
+    }
+
+    /* BLOG BÖLÜMÜ */
+    .blog {
+        padding: 40px 5%;
+        text-align: left;
+        /* Başlık sola hizalandı */
+    }
+
+    .blog-container {
+        display: flex;
+        flex-direction: column;
+        /* Mobilde dikey hizalama */
+        gap: 30px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Blog başlığı */
+    .blog-title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .blog-title h2 {
+        font-size: 40px;
+    }
+
+    /* Blog içeriği */
+    .blog-content {
+        width: 100%;
+        text-align: left;
+    }
+
+    .blog-content h3 {
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 34px;
+    }
+
+    .blog-content p {
+        font-size: 22px;
+        font-weight: 300;
+        width: 100%;
+        /* Metin taşmasını engelle */
+    }
+
+    /* Video kısmı (en üste alınacak) */
+    .blog-video {
+        order: -1;
+        /* Video her zaman en üstte olsun */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-video h4 {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blog-video h4 span {
+        color: #d3d3d3;
+        font-weight: 300;
+        margin-left: 10px;
+    }
+
+    /* Video iframe */
+    .blog-video iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    /* FOOTER BÖLÜMÜ */
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        /* Sola hizala */
+        text-align: left;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footer-logo p {
+        font-size: 18px;
+    }
+
+    .footer-columns {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* Sola hizala */
+        gap: 20px;
+        width: 100%;
+    }
+
+    .footer-column {
+        width: 100%;
+        max-width: 300px;
+        text-align: left;
+        /* Sola hizala */
+    }
+
+    .footer-column h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .footer-column a,
+    .footer-column p {
+        font-size: 16px;
+    }
+
+    .footer-column p {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer-bottom {
+        padding: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footer-bottom::after {
+        width: 90%;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+    .footer-brand {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .footer-brand img {
+        height: 25px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* NAVBAR */
+    .navbar {
+        position: absolute;
+        /* Navbar header'ın üstüne gelsin */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        padding: 15px 40px;
+        z-index: 999;
+        backdrop-filter: blur(0);
+        /* Arka plan gölgelenmesini kaldır */
+        box-shadow: none;
+        height: auto;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        padding: 0;
+        background: url("images/banner.png") no-repeat center center;
+        background-size: cover;
+        width: 100vw;
+        position: relative;
+        padding: 40px 20px;
+        min-height: auto;
+    }
+
+    .content-text {
+        min-width: 500px;
+        font-size: 22px;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .content-text h1 {
+        font-size: 38px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+
+    .content-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .content-images img {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    /* UYGULAMA ERİŞİMİ BÖLÜMÜ */
+    .app-access {
+        padding: 60px 5%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .app-images img {
+        width: 400px;
+    }
+
+    .app-text {
+        max-width: 500px;
+    }
+
+    .store-buttons img {
+        width: 160px;
+    }
+
+    /* ÖZELLİKLER BÖLÜMÜ */
+    .features {
+        margin-top: 15px;
+        margin-bottom: 60px;
+        padding: 20px;
+    }
+
+    .features h2 {
+        font-size: 36px;
+    }
+
+    .features p {
+        font-size: 26px;
+    }
+
+    .features-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Tabletlerde 2 sütun devam */
+        gap: 50px;
+        /* Boşluk azaltıldı */
+        max-width: 900px;
+        /* Tablet için genişlik optimize edildi */
+        margin: 0 auto;
+    }
+
+    .feature {
+        text-align: left;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .feature img {
+        width: 55px;
+        /* Görselleri biraz küçülttük */
+    }
+
+    .feature-text p {
+        font-size: 24px;
+    }
+
+    .feature-text span {
+        font-size: 15px;
+    }
+
+    /* BLOG BÖLÜMÜ */
+    .blog {
+        padding: 60px 8%;
+        text-align: left;
+    }
+
+    .blog-container {
+        display: flex;
+        flex-direction: row;
+        /* Tabletlerde yan yana hizalama */
+        gap: 40px;
+        max-width: 900px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Blog başlığı */
+    .blog-title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .blog-title h2 {
+        font-size: 28px;
+    }
+
+    /* Blog içeriği */
+    .blog-content {
+        width: 50%;
+        max-width: 50%;
+        text-align: left;
+    }
+
+    .blog-content h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .blog-content p {
+        font-size: 18px;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    /* Video kısmı */
+    .blog-video {
+        width: 45%;
+        /* Video ve metin eşit hizalansın */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-video h4 {
+        font-size: 22px;
+        font-weight: 400;
+        text-align: right;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blog-video h4 span {
+        color: #d3d3d3;
+        font-weight: 300;
+        margin-left: 10px;
+    }
+
+    /* Video iframe */
+    .blog-video iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        border-radius: 8px;
+    }
+
+    /* FOOTER BÖLÜMÜ */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        /* Tablette içeriği ortala */
+        text-align: center;
+        padding: 50px 40px;
+        gap: 30px;
+    }
+
+    .footer-columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Tablette 2 sütun düzeni */
+        gap: 40px;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .footer-column {
+        text-align: center;
+        /* Tablette metinler ortalı */
+        align-items: center;
+    }
+
+    .footer-bottom {
+        padding: 20px;
+        font-size: 14px;
+        text-align: center;
+        /* Tablette ortala */
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        /* Tablette yan yana olsun */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-brand {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .footer-brand img {
+        height: 25px;
+    }
+}

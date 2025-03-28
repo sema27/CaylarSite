@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çaylar - Blog </title>
+    <link rel="stylesheet" href="blogs.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Kütüphanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Çaylar Logo">
+        </div>
+        <nav class="menu">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="features.html">Özellikler</a>
+            <a href="blogs.html">Blog</a>
+            <a href="contacts.html">İletişim</a>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <header class="header-content">
+        <div class="page-title">Blog</div>
+    </header>
+
+    <section class="news-section">
+        <h2>Haberler</h2>
+    
+        <div class="news-container-wrapper">
+            <!-- Masaüstü için ileri/geri butonları -->
+            <button class="desktop-scroll-btn" id="desktop-prev">&#10094;</button>
+            <button class="desktop-scroll-btn" id="desktop-next">&#10095;</button>
+            
+            <div class="news-container">
+                <div class="news-item">
+                    <img src="images/news1.png" alt="Güncellemeler">
+                    <div class="news-date"><i class="fa fa-clock"></i> 24 Ocak 2020</div>
+                    <h3>Güncellemeler</h3>
+                    <div class="news-content">
+                        <p class="news-text">
+                            Penatibusetmagnisdisparturientmontes, nascetur ridiculus mus.
+                            Etiam ultrices metus ut enim biben dum, vitae fringilla.
+                        </p>
+                    </div>
+                    <a href="blogdetails.html">Devamını Oku <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="news-item">
+                    <img src="images/news2.png" alt="Çaylar">
+                    <div class="news-date"><i class="fa fa-clock"></i> 24 Ocak 2020</div>
+                    <h3>Çaylar</h3>
+                    <div class="news-content">
+                        <p class="news-text">
+                            Penatibusetmagnisdisparturientmontes, nascetur ridiculus mus.
+                            Etiam ultrices metus ut enim biben dum, vitae fringilla.
+                        </p>
+                    </div>
+                    <a href="#">Devamını Oku <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="news-item">
+                    <img src="images/news3.png" alt="Uygulamamız">
+                    <div class="news-date"><i class="fa fa-clock"></i> 24 Ocak 2020</div>
+                    <h3>Uygulamamız</h3>
+                    <div class="news-content">
+                        <p class="news-text">
+                            Penatibusetmagnisdisparturientmontes, nascetur ridiculus mus.
+                            Etiam ultrices metus ut enim biben dum, vitae fringilla.
+                        </p>
+                    </div>
+                    <a href="#">Devamını Oku <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="news-item">
+                    <img src="images/news4.png" alt="Giriş Yap/Kayıt Ol">
+                    <div class="news-date"><i class="fa fa-clock"></i> 24 Ocak 2020</div>
+                    <h3>Giriş Yap/Kayıt Ol</h3>
+                    <div class="news-content">
+                        <p class="news-text">
+                            Penatibusetmagnisdisparturientmontes, nascetur ridiculus mus.
+                            Etiam ultrices metus ut enim biben dum, vitae fringilla.
+                        </p>
+                    </div>
+                    <a href="#">Devamını Oku <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <button id="prevPage">&#10094;</button>
+            <button class="page-number active" data-index="0">1</button>
+            <button class="page-number" data-index="1">2</button>
+            <button id="nextPage">&#10095;</button>
+        </div>             
+    </section>         
+    
+    <hr>
+    
+    <section class="video-section">
+        <h2>Videolar</h2><br>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EGOOLrNu5Fk" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Çaylar Logo">
+                <p>Lorem Ipsum Dolor Sit Amet</p>
+            </div>
+    
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Hızlı Erişim</h3>
+                    <a href="#">Ana Sayfa</a>
+                    <a href="#">Özellikler</a>
+                    <a href="#">Blog</a>
+                    <a href="#">İletişim</a>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>Sosyal Medya</h3>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>İletişim</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Sakarya Üniversitesi Teknoloji Geliştirme Bölgeler</p>
+                    <p><i class="fas fa-phone"></i> 0 530 224 13 12 <br> 0850 988 27 43</p>
+                    <p><i class="fas fa-envelope"></i> caya@caysiparis.com</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <span class="footer-copyright">© Çaylar Uygulaması 2024. Tüm Hakları Saklıdır.</span>
+            <span class="footer-links">
+                <a href="#">KVKK Aydınlatma Metni</a>
+                <a href="#">Çerezler</a>
+                <a href="#">Gizlilik Politikası</a>
+            </span>
+            <div class="footer-brand">
+                <img src="images/argedeLogo.png" alt="Argede Logo">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
